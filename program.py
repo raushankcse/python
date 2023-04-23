@@ -216,20 +216,69 @@ def ask_ok(prompt, retries=4, reminder = 'Please try again!'):
 '''
 
 
-
+'''
 i=5
 def f(arg = i):
 	print(arg)
 	
 i = 6
 f()
+'''
+
+'''
+def f(a,L=[]):
+	L.append(a)
+	return L
+	
+
+print(f(1))
+print(f(2))
+print(f(3))
+'''
+
+'''
+def f(a,L=None):
+	if L is None:
+		L = []
+	L.append(a)
+	return L
+'''
+
+
+'''
+def parrot(voltage, state = 'a stiff', action='voom', type = 'Norwegian Blue'):
+	print("-- This parrot wouldn't", action, end=' ')
+	print("If you put", voltage, "volts through it.")
+	print("-- lovely plumage, the" , type)
+	print("-- It's" , state, "!")
+
+parrot(1000)
+parrot(voltage=1000)
+parrot(voltage=1000000, action='VOOOOOM')
+parrot(action='VOOOOOM', voltage= 1000000)
+parrot('a million', 'bereft of life', 'jump')
+parrot('a thousand', state = 'pushing up the daisies')
+
+'''
 
 
 
+'''
+def make_incrementor(n):
+	return lambda x: x+n
 
+f = make_incrementor(42)
+print(f(2))
+'''
 
+'''
+pairs = [(1,'one'), (2,'two'), (3,'three'), (4,'four')]
 
+pairs.sort(key=lambda pair: pair[1])
 
+print(pairs)
+
+'''
 
 
 
