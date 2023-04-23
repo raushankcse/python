@@ -63,14 +63,22 @@ for user,status in users.items():
 
 
 
-
+'''
 for i in range(5):
 	print(i)
 	
-	
+	'''
 
 
-	
+'''
+a = ['Mary' , 'had' ,'a' , 'little' , 'lamb']
+for i in range(len(a)):
+	print(i, a[i] )
+
+'''	
+
+
+# print(sum(range(10)))
 
 
 
